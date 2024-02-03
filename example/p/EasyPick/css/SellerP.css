@@ -1,0 +1,105 @@
+.divider:after,
+.divider:before {
+  content: "";
+  flex: 1;
+  height: 0px;
+  background: #def0f3;
+}
+
+.custom-background {
+    background-color: #d8def0; 
+  }
+
+.arrow-down {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #292525; 
+  }
+
+  /* Style the filter button */
+#filter-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px; /* Adjust the padding as needed */
+  }
+  
+  /* Style the Font Awesome icon */
+  #filter-button i {
+    font-size: 20px; /* Adjust the icon size as needed */
+    margin-right: 5px; /* Add spacing between the icon and text */
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* Background color for the page */
+}
+
+/* Style for the menu button */
+.menu-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+/* Style for the menu sidebar */
+.menu-sidebar {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Initially hidden */
+    width: 300px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Transparent background color */
+    transition: right 0.3s ease-in-out;
+    z-index: 9998;
+    padding-top: 60px; /* Adjust to match the height of your header */
+}
+
+/* Style for the menu links */
+.menu-links {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-links li {
+    padding: 10px;
+    text-align: right; /* Right-align text */
+}
+
+.menu-links li a {
+    text-decoration: none;
+    color: #fff; /* Text color */
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.menu-links li a:hover {
+    color: #bdbfc4; /* Hover color */
+}
+
+/* Toggle menu sidebar visibility */
+.menu-open {
+    right: 0;
+}
+.footer{
+    margin-top: 150px;
+    width: 100%;
+    padding: 20px 45%;
+    background: #d8def0;
+    color:#3f4041;
+    display: flex;
+  }
+

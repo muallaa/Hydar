@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyPick Seller Profile</title>
+    <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/AccountPage.css">
+    <link rel="stylesheet" href="../css/SellerP.css">
+    <link rel="stylesheet" href="../index/script.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body> 
+        <header class="header">
+            <div class="custom-background">
+            <nav class="navbar navbar-expand-lg navbar-light">
+              <div class="container">
+                <div><img src="..\img\LogoE2.PNG" alt="logo" width="110" height="90"></div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><strong>Home</strong></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><strong>About</strong></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><strong>Car Gallery</strong></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><strong>Contact</strong></a> 
+                    </li>
+                  </ul>
+                </div>
+                <form class="form-inline my-2 my-lg-0">
+                    <div class="input-group">
+                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                        <div class="input-group-append">
+                            <button class="btn btn-light" type="submit">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            <div class="menu-sidebar">
+                <ul class="menu-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            </div>
+            </nav>
+        </div>
+     
+        <div class="bg-light">
+        <div class=" container-fluid">
+            <div class="row">
+                <div class="d-flex justify-content-around">
+                    <div class=" align-self-center">
+                        <img src="..\img\ALJ.PNG" alt="" width="250" height="150">
+                    </div>
+                    
+                    <div class="align-self-center d-grid py-5">
+                        <div><h6><strong>Agent Name :</strong> Abdul Latif Jameel </h6></div>
+                        <div><h6><strong>Email :</strong> contact@alj.com </h6></div>
+                        <div><h6><strong>Phone :</strong> 800 2 4444 00 </h6></div>
+                        <div><h6><strong>Location :</strong>  Olaya, Imam Muhammad bin Saud Street, Riyadh </h6></div>
+                        <br>
+                    </div>
+                    <br>
+                 <div class="form-group align-self-center">
+                        <label class="form-label" for="carBrandOptions">Car Brands Options</label>
+                        <div class="position-relative">
+                            <select id="carManagementOptions" class="form-control">
+                                <option value="" disabled selected>Select brand </option>
+                                <option value="Toyota">Toyota</option>
+                                <option value="Lexus">Lexus </option>
+                                <option value="Display All">Display All</option>
+                            </select>
+                            <span class="arrow-down"></span>
+                        </div>
+                    </div> 
+                    
+
+                      <div class="form-group align-self-center">
+                        <label class="form-label" for="carManagementOptions">Car Management Options</label>
+                        <div class="position-relative">
+                            <select id="carManagementOptions" class="form-control">
+                                <option value="" disabled selected>Select an option</option>
+                                <option value="DeleteCar">Delete Car</option>
+                                <option value="UpdateCar">Update Car</option>
+                                <option value="UploadCar">Upload Car</option>
+                            </select>
+                            <span class="arrow-down"></span>
+                        </div>
+                    </div>                                         
+                </div>
+            </div>
+        </div>
+    </div>
+
+</header>
+    <main>
+<br>
+        <div class="container">
+            <div class="container">
+                <div class="row">
+                  <buttom class="col-md-6">
+                    <button class="btn" style="background-color: #d8def0; color: rgb(82, 81, 81);"><strong>Compare</strong></button>
+                    <a href="..\index\PBI.html">
+                        <button class="btn mx-2" style="background-color: #d8def0; color: rgb(82, 81, 81);"><strong>Analytics</strong></button>
+                    </a>
+                  </buttom>
+                  </div>
+                  <br>
+                  <div class="col-md-6 text-right">
+                    <div id="filter-options" class="d-flex align-items-center justify-content-end">
+                      <select id="category-filter" class="mr-5">
+                        <option value="all">All</option>
+                        <option value="electronics">Fuel Type</option>
+                        <option value="clothing">Speed</option>
+                        <option value="books">Number of seats</option>
+                        <option value="books">Price</option>
+                        <option value="books">Engine Type</option>
+                        <option value="books">Transportation</option>
+                      </select>
+                      <button id="filter-button">
+                         Filter by Features<i class="fas fa-filter"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            <div class="row border">
+                <div class="row row-cols-md-2">
+                    <div class="col text-center py-4">
+                        <img src="..\img\car1.jpeg" alt="" class="img-fluid rounded rounded-3" width="500" height="500">
+                        <br>
+                        <p><strong>Toyota GXR2</strong></p>
+                        <p>269.100.00 ريال</p>
+                        <button class="btn btn-light align-self-center">Add to cart </button>
+                    </div>
+
+                    <div class="col text-center py-4">
+                        <img src="..\img\car3.jpeg" alt="" class="img-fluid rounded rounded-3" width="500" height="500">
+                        <br>
+                        <p><strong>Toyota Camry LE</strong></p>
+                        <p>99.245.00 ريال</p>
+                        <button class="btn btn-light align-self-center">Add to cart </button>
+                    </div>
+
+                    <div class="col text-center py-4">
+                        <img src="..\img\car4.jpeg" alt="" class="img-fluid rounded rounded-3" width="500" height="500">
+                        <br>
+                        <p><strong>Lexus LX600</strong></p>
+                        <p>670.000.00 ريال</p>
+                        <button class="btn btn-light align-self-center">Add to cart </button>
+                    </div>
+
+                    <div class="col text-center py-4">
+                        <img src="..\img\car2.jpeg" alt="" class="img-fluid rounded rounded-3" width="500" height="500">
+                        <br>
+                        <p><strong>Lexus ES350</strong></p>
+                        <p>240.000.00 ريال</p>
+                        <button class="btn btn-light align-self-center">Add to cart </button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        
+    </main>   
+</body>
+<div class= "footer">
+    <div class = "col-1">
+        <h6> CONTACT </h6>
+        <p>EasyPick@gmail.com </p>
+        <p>@2023EasyPick</p>
+    </div>
+</div>
+<script>
+    function toggleMenu() {
+  const menuSidebar = document.querySelector('.menu-sidebar');
+  menuSidebar.classList.toggle('menu-open');
+}
+</script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</html>
